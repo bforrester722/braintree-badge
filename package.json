@@ -1,0 +1,33 @@
+{
+  "name": "@smyd/braintree-badge",
+  "version": "1.0.0",
+  "description": "a simple element that takes a braintree merchantId from app.config and lazy-loads a badge which links to a verified merchant web page",
+  "main": "braintree-badge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stylemydomain/braintree-badge.git"
+  },
+  "author": "Ben Forrester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stylemydomain/braintree-badge/issues"
+  },
+  "homepage": "https://github.com/stylemydomain/braintree-badge#readme",
+  "dependencies": {
+    "@polymer/iron-image": "^3.0.2",
+    "@polymer/polymer": "^3.0.0",
+    "@smyd/app-functions": "^1.0.7",
+    "@smyd/app-shared": "^1.0.3"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.1.0",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wct-mocha": "^1.0.1"
+  }
+}
