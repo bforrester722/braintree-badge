@@ -1,6 +1,6 @@
 {
   "name": "@smyd/braintree-badge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple element that takes a braintree merchantId from app.config and lazy-loads a badge which links to a verified merchant web page",
   "main": "braintree-badge.js",
   "scripts": {
