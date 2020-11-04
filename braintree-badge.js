@@ -32,7 +32,8 @@ class BraintreeBadge extends AppElement {
 
   connectedCallback() {
     super.connectedCallback();
-
+    const {merchantId} = braintreeConfig || {};
+    this._merchantId   = merchantId      || '';
     this.__lazyLoad();
   }
 
@@ -46,8 +47,6 @@ class BraintreeBadge extends AppElement {
   async __lazyLoad() {
     await schedule();
     await isOnScreen(this);
-    const {merchantId} = braintreeConfig || {};
-    this._merchantId   = merchantId      || '';
     this._src          = merchantId      ? 
       'https://s3.amazonaws.com/braintree-badges/braintree-badge-wide-light.png' : '#';
   }
