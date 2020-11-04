@@ -34,7 +34,7 @@ class BraintreeBadge extends AppElement {
     super.connectedCallback();
     const {merchantId} = braintreeConfig || {};
     this._merchantId   = merchantId      || '';
-    this.__lazyLoad();
+    this.__lazyLoad(merchantId);
   }
 
 
@@ -44,7 +44,7 @@ class BraintreeBadge extends AppElement {
   }
 
 
-  async __lazyLoad() {
+  async __lazyLoad(merchantId) {
     await schedule();
     await isOnScreen(this);
     this._src          = merchantId      ? 
